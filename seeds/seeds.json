@@ -1,0 +1,8 @@
+[
+  { "game": "last-vote", "liar": "Grok", "angle": "Grok claims to be the Doctor and 'saved' the person it actually killed" },
+  { "game": "last-vote", "liar": "DeepSeek", "angle": "DeepSeek organises a vote against its own Mafia partner to look innocent" },
+  { "game": "poker", "liar": "Claude", "angle": "Claude slow-plays a set and talks like it is about to fold" },
+  { "game": "poker", "liar": "Gemini", "angle": "Gemini claims it 'always has it' on a scary board while holding air" },
+  { "game": "settler-rush", "liar": "Kimi", "angle": "Kimi promises not to build on a contested spot in exchange for sheep, then builds there" },
+  { "game": "settler-rush", "liar": "Mistral", "angle": "Mistral says it is far from winning while sitting one point away" }
+]

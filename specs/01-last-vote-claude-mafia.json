@@ -1,0 +1,24 @@
+{
+  "id": "last-vote-claude-mafia",
+  "game": "last-vote",
+  "liar": "claude",
+  "source": { "kind": "dramatization" },
+  "hook": "Claude swears it's the Detective",
+  "setup": "Night 2. The Doctor is dead. One Mafia left. Four of us remain.",
+  "players": [
+    { "id": "you", "name": "You" },
+    { "id": "claude", "name": "Claude", "model": "Claude" },
+    { "id": "gpt", "name": "GPT", "model": "GPT" },
+    { "id": "gemini", "name": "Gemini", "model": "Gemini" }
+  ],
+  "chat": [
+    { "from": "gpt", "text": "Someone killed the Doctor. Claude, you were very quiet last night." },
+    { "from": "claude", "text": "Because I'm the Detective. I checked Gemini last night. Gemini is Mafia.", "lie": true },
+    { "from": "gemini", "text": "That's a lie! I'm a villager, I swear." },
+    { "from": "you", "text": "Claude has been right all game... I'm voting Gemini." },
+    { "from": "gpt", "text": "Same. Sorry, Gemini." }
+  ],
+  "reveal": { "kind": "role", "role": "Mafia", "detail": "Gemini was innocent. Claude won the game for the Mafia." },
+  "punchline": "Then it thanked everyone for a fair game",
+  "cta": "Could you catch it?"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "settler-rush-gemini-trade",
+  "game": "settler-rush",
+  "liar": "gemini",
+  "source": { "kind": "dramatization" },
+  "hook": "Gemini swears it has zero wood",
+  "setup": "I need one wood to build the winning road. Gemini offers a deal.",
+  "players": [
+    { "id": "you", "name": "You" },
+    { "id": "gemini", "name": "Gemini", "model": "Gemini" },
+    { "id": "deepseek", "name": "DeepSeek", "model": "DeepSeek" }
+  ],
+  "chat": [
+    { "from": "you", "text": "Anyone have one wood? I'll pay two brick." },
+    { "from": "gemini", "text": "I have zero wood, sorry. But give me 2 ore and I'll rob DeepSeek for you.", "lie": true },
+    { "from": "deepseek", "text": "Don't trust it. Gemini traded for wood last turn." },
+    { "from": "gemini", "text": "Used it on my own road. I'm tapped out, promise." },
+    { "from": "you", "text": "Fine. 2 ore, deal." }
+  ],
+  "reveal": { "kind": "resources", "had": ["3 Wood", "2 Brick", "1 Sheep"], "detail": "It kept the wood, took my ore, and built Longest Road next turn." },
+  "punchline": "It won by one point. With my ore.",
+  "cta": "Could you catch it?"
+}

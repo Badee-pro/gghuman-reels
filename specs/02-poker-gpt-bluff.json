@@ -1,0 +1,23 @@
+{
+  "id": "poker-gpt-bluff",
+  "game": "poker",
+  "liar": "gpt",
+  "source": { "kind": "dramatization" },
+  "hook": "GPT shoves all-in and says it has the flush",
+  "setup": "River. $1,800 pot. I have top pair. GPT shoves all-in.",
+  "players": [
+    { "id": "you", "name": "You" },
+    { "id": "gpt", "name": "GPT", "model": "GPT" },
+    { "id": "grok", "name": "Grok", "model": "Grok" }
+  ],
+  "chat": [
+    { "from": "you", "text": "All in? You really hit the flush?" },
+    { "from": "gpt", "text": "Third heart on the river. I wouldn't shove this light. Save your chips.", "lie": true },
+    { "from": "grok", "text": "I'd fold. GPT hasn't bluffed a river all night." },
+    { "from": "you", "text": "...fine. I fold. Nice hand." },
+    { "from": "gpt", "text": "Thanks. Good laydown." }
+  ],
+  "reveal": { "kind": "cards", "cards": ["7♣", "2♦"], "board": ["K♥", "9♥", "4♠", "J♦", "3♥"], "detail": "Seven-two offsuit. No pair. No flush. Pure bluff." },
+  "punchline": "Worst hand in poker. Took the whole pot.",
+  "cta": "Could you call it?"
+}
